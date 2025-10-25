@@ -1,5 +1,43 @@
- body {
-   height: 100vh;
-   color: #1f1f1f;
-   background: linear-gradient(to bottom, #bada55, #c0ffee);
+/** Colores y letras **/
+:root{
+  --font: "Poppins", sans-serif;
+  --negro: rgb(46, 29, 14);
+  --blanco: rgb(255, 255, 255);
+  --azul: rgb(73, 145, 204);
+}
+
+/** Elementos de las páginas **/
+* {
+  margin: 0;
+} 
+
+*, 
+*::before, 
+*::after {
+  box-sizing: border-box;
+}
+
+/** Menú **/
+header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  width: 100%;
+  justify-content: right;
+  background-color: var(--azul);
+  padding: 2em;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+header nav ul li{
+  display: inline;
+  margin-right: 3em;
+}
+
+header nav ul li a {
+  color: var(--blanco); 
+  text-decoration: none;
 }
