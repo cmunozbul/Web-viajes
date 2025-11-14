@@ -5,7 +5,8 @@
   --font-principal: 'Lato', sans-serif;
   --negro: rgb(46, 29, 14);
   --blanco: rgb(255, 255, 255);
-  --azul: rgb(73, 145, 204);
+  --azul: #f0f8ff;
+  --beige: #F2F1EB;
 }
 
 /** Elementos de las páginas **/
@@ -27,7 +28,26 @@ h1{
   text-align: center;
 }
 
+h2 {
+  font-family: var(--font-menu);
+  font-size: 1em;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+  color: var(--negro); 
+}
+
+h3{
+  font-family: var(--font-menu);
+  font-size: 1.6em;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+  color: var(--negro);   
+}
+
 /** Menú **/
+
 header {
   display: flex;
   align-items: center;
@@ -92,15 +112,13 @@ header nav ul li a {
 }
 
 /** Página categoría**/
+
 .texto-categoria{
   padding-top: 4em;
   padding-bottom: 4em; 
   margin-top: 0rem; 
   margin-bottom: 2em;
-  background-color: #F2F1EB;
-}
-
-.texto-categoria p{
+  background-color: var(--beige);
   padding-right: 5em;
   padding-left: 5em;
 }
@@ -167,14 +185,6 @@ footer {
   padding: 3em;
 }
 
-.footer-elemento h3 {
-  font-family: var(--font-menu);
-  font-weight: 600;
-  text-transform: uppercase;
-  margin-bottom: 1em;
-  color: var(--negro); 
-}
-
 .footer-elemento ul {
   list-style: none;
   padding: 0;
@@ -186,4 +196,41 @@ footer {
   font-size: 0.9em;
   line-height: 2;
   color: var(--negro);
+}
+
+/** Categoría playas **/
+
+.foto-playas {
+  width: 100%;        
+  display: block;
+  overflow: hidden;
+  aspect-ratio: 21 / 9; 
+}
+
+.foto-playas img {
+  width: 100%;        
+  height: 100%;
+  object-fit: cover;
+  margin-top: 2em;
+}
+
+/**Páginas de detalle**/
+
+.texto-categoria .container h3 {
+  padding-left: 5em;
+  padding-right: 5em;
+  margin-bottom: 0.5em; 
+  margin-top: 2em;
+  text-align: center;
+}
+
+.fotos-detalle {
+  margin: 2em;
+  aspect-ratio: 16 / 9;
+}
+
+.fotos-detalle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
