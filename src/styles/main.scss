@@ -30,10 +30,9 @@ h1{
 
 h2 {
   font-family: var(--font-menu);
-  font-size: 1em;
+  font-size: 1.3em;
   font-weight: 600;
   text-transform: uppercase;
-  margin-bottom: 1em;
   color: var(--negro); 
 }
 
@@ -42,8 +41,8 @@ h3{
   font-size: 1.6em;
   font-weight: 600;
   text-transform: uppercase;
-  margin-bottom: 1em;
-  color: var(--negro);   
+  color: var(--negro); 
+  text-align: center;  
 }
 
 /** Menú **/
@@ -59,17 +58,28 @@ header {
   padding: 2em;
   font-size: 1em;
   font-weight: 500;
-}
 
-header nav ul li{
-  display: inline;
-  margin-right: 3em;
-}
-
-header nav ul li a {
-  color: var(--negro); 
-  text-decoration: none;
-}
+  nav{
+    ul{
+      li{
+        display: inline;
+        margin-right: 3em;
+        a{
+          color: var(--negro); 
+          text-decoration: none;
+          &:hover {
+            color: #2993d5;
+          }
+          &.current {
+            color: #2993d5; 
+            font-weight: 600; 
+            padding-bottom: 3px; 
+          }
+        }
+      }
+    }
+  }
+}  
 
 /** Portada **/
 
@@ -81,12 +91,12 @@ header nav ul li a {
   object-fit: cover;
   object-position: center;
   align-items: center;
-}
 
-.imagen-portada img{
+  img{
   width: 100%;
   height: 100%;
   object-position: center;
+  }
 }
 
 .titulo-portada{
@@ -134,68 +144,68 @@ main{
   display: block;
   overflow: hidden;
   aspect-ratio: 21 / 9; 
-}
-
-.foto-visitar img {
+  img {
   width: 100%;        
   height: 100%;
+  }
 }
+
+/** Tarjetas de Categoría **/
 
 .tarjetas-categoria {
   display: flex;
   flex-wrap: wrap; 
   gap: 2em; 
-  margin-top: 3em; 
-  margin-bottom: 4em; 
   padding-right: 5em;
-  padding-left: 5rem;
-  font-family: var(--font-principal);
-  font-style: italic;
-}
+  padding-left: 5em;
+  padding-top: 1em;
+  
+  .tarjeta {
+    flex: 1 1 calc(50% - 1em); 
+    text-decoration: none;
+    color: var(--negro);
+    display: block;
+    
+    h2 {
+      padding-top: 0.6em;
+      padding-bottom: 0.5em;
+      margin-top: 0.5em;
+      margin-bottom: 0;
+    }
+    
+    .tarjeta-imagen {
+      margin: 0;
+      aspect-ratio: 4 / 3;
+      overflow: hidden;
 
-.tarjeta {
-  flex: 1 1 calc(50% - 1em); 
-  text-decoration: none;
-  color: var(--negro);
-  display: block;
-}
-
-.tarjeta-imagen {
-  margin: 0;
-  aspect-ratio: 4 / 3;
-  overflow: hidden;
-}
-
-.tarjeta-imagen img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
 }
 
 /** Footer **/
 
-footer {
-  font-family: var(--font-principal);
-}
-
-.footer {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr); 
-  gap: 2em; 
-  padding: 3em;
-}
-
-.footer-elemento ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer-elemento a {
-  text-decoration: none;
-  font-size: 0.9em;
-  line-height: 2;
-  color: var(--negro);
+.footer-elemento {
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+      li {
+        a {
+          text-decoration: none;
+          font-size: 0.9em;
+          line-height: 2;
+          color: var(--negro);
+            &:hover { 
+              color: #007bff;
+            }
+        }
+      }
+  }
 }
 
 /** Categoría playas **/
@@ -205,13 +215,13 @@ footer {
   display: block;
   overflow: hidden;
   aspect-ratio: 21 / 9; 
-}
-
-.foto-playas img {
+  
+  img {
   width: 100%;        
   height: 100%;
   object-fit: cover;
   margin-top: 2em;
+  }
 }
 
 /**Páginas de detalle**/
@@ -227,10 +237,30 @@ footer {
 .fotos-detalle {
   margin: 2em;
   aspect-ratio: 16 / 9;
-}
-
-.fotos-detalle img {
+  
+  img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  }
+}
+
+.descripcion-detalles{
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.video-responsive {
+  position: relative;
+  padding-bottom: 50%; 
+  padding-top: 30px;
+  max-width: 100%; 
+    
+    iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
 }
