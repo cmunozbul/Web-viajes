@@ -81,6 +81,41 @@ header {
   }
 }  
 
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none; 
+    position: absolute;
+    min-width: 180px;
+    margin-top: 0;
+    background-color: var(--blanco);
+    padding: 10px 0;
+
+    li {
+        display: block;
+        margin: 0;
+        
+        a {
+            color: var(--negro);
+            padding: 8px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+            
+            &:hover {
+                color: var(--azul);
+            }
+        }
+    }
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; 
+}
+
 /** Portada **/
 
 .imagen-portada{
@@ -117,8 +152,8 @@ header {
   max-width: 1140px;
   margin-right: auto;
   margin-left: auto;
-  padding-right: 2rem;
-  padding-left: 2rem;
+  padding-right: 2em;
+  padding-left: 2em;
 }
 
 /** Página categoría**/
@@ -299,4 +334,114 @@ figure {
         font-size: 0.9em;
         color: #555;
     }
+}
+
+
+/** Movil **/
+@media (max-width: 767px) {
+header {
+  flex-direction: column;
+  padding: 1em;
+  text-align: center;
+}
+  
+header nav ul li {
+  display: block; 
+  margin: 0.5em 0;
+}
+
+.titulo-portada {
+  font-size: 2.5em; 
+  padding: 3em 0.5em 0;
+}
+
+.container {
+  padding-right: 1em;
+  padding-left: 1em;
+}
+
+.texto-categoria {
+  padding: 2em 1em;
+}
+
+h3 {
+  font-size: 1.4em;
+  text-align: center;
+  padding: 0.5em 0.5em;
+}
+  
+.tarjetas-categoria {
+  flex-direction: column;
+  padding-right: 1em;
+  padding-left: 1em;
+  gap: 1.5em;
+    
+  .tarjeta {
+      flex: 1 1 100%;
+  }
+}
+
+.footer {
+  grid-template-columns: 1fr;
+  padding: 2em 1em;
+  gap: 1em;
+}
+
+.descripcion-detalles {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.video-responsive iframe {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+}
+
+/**Tablet**/
+@media (min-width: 768px) and (max-width: 1023px) {
+header {
+  padding: 1.5em 1em; 
+  font-size: 0.9em;
+  justify-content: space-around; 
+}
+
+header nav ul li {
+  margin-right: 1.5em; 
+}
+
+.footer {
+  grid-template-columns: repeat(3, 1fr) 1fr 1fr;
+  gap: 1.5em;
+  padding: 2em;
+}
+
+.footer-elemento {
+  font-size: 0.95em; 
+}
+    
+.titulo-portada {
+  font-size: 3em;
+  padding-top: 5em; 
+}
+
+.texto-categoria {
+  font-size: 3.5em; 
+  padding-top: 5em; 
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.tarjetas-categoria {
+  padding-right: 2em;
+  padding-left: 2em;
+  gap: 1.5em;
+}
+.texto-categoria {
+    padding: 2em 1em;
+}
+
+.texto-categoria {
+  font-size: 1.5em;
+}
 }
