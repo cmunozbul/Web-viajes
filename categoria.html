@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Index</title>
+  <title>Qué visitar</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
@@ -26,7 +26,10 @@
       <section class="tarjetas-categoria">
         <a href="det2.html" class="tarjeta">
           <figure class="tarjeta-imagen">
-            <img src="./src/img/barcas.jpg" alt="Playa"> 
+            <picture>
+              <source srcset="./src/img/barcas_palafrugell.jpg?as=webp&width=500" type="image/webp">
+              <img src="./src/img/barcas_palafrugell.jpg" alt="Barcas en Palafrugell">
+            </picture>
             <figcaption>Imagen de las barcas de Palafrugell</figcaption>      
           </figure>
         <div class="tarjeta-texto">
@@ -36,8 +39,11 @@
 
         <a href="det1.html" class="tarjeta">
           <figure class="tarjeta-imagen">
-            <img src="./src/img/mirador.jpg" alt="Miradores"> 
-            <figcaption>Mirador imagen</figcaption>      
+            <picture>
+              <source srcset="./src/img/mirador.jpg?as=webp&width=500" type="image/webp">
+              <img src="./src/img/mirador.jpg" alt="miradores">
+            </picture>
+            <figcaption>Mirador</figcaption>      
           </figure>
         <div class="tarjeta-texto">
         <h2>Miradores y naturaleza</h2>
@@ -46,8 +52,11 @@
 
         <a href="" class="tarjeta">
           <figure class="tarjeta-imagen">
-          <img src="./src/img/d.jpg" alt="Monumentos">
-          <figcaption>Imagen iglesia</figcaption>      
+            <picture>
+              <source srcset="./src/img/iglesia.jpg?as=webp&width=500" type="image/webp">
+              <img src="./src/img/iglesia.jpg" alt="Monumentos iglesia">
+            </picture>
+            <figcaption>Iglesia</figcaption>      
           </figure>
         <div class="tarjeta-texto">
         <h2>Monumentos e iglesias</h2>
@@ -56,8 +65,11 @@
 
         <a href="" class="tarjeta">
           <figure class="tarjeta-imagen">
-          <img src="./src/img/e.jpg" alt="Museos">
-          <figcaption>Imagen museo</figcaption>      
+            <picture>
+              <source srcset="./src/img/museo.jpg?as=webp&width=500" type="image/webp">
+              <img src="./src/img/museo.jpg" alt="museos">
+            </picture>
+            <figcaption>Imagen museos</figcaption>      
           </figure>
         <div class="tarjeta-texto">
         <h2>Museos y cultura</h2>
@@ -66,8 +78,11 @@
 
         <a href="" class="tarjeta">
           <figure class="tarjeta-imagen">
-          <img src="./src/img/a.jpg" alt="Actividades">
-          <figcaption>Imagen atracciones</figcaption>      
+            <picture>
+              <source srcset="./src/img/actividades.jpg?as=webp&width=500" type="image/webp">
+              <img src="./src/img/actividades.jpg" alt="Actividades">
+            </picture>
+            <figcaption>Imagen Actividades</figcaption>      
           </figure>
         <div class="tarjeta-texto">
         <h2>Actividades y Ocio</h2>
@@ -75,10 +90,12 @@
         </a>
 
         <a href="" class="tarjeta">
-          <figure class="tarjeta-imagen">
-          <img src="./src/img/e.jpg" alt="Gastronomía">
-          <figcaption>Imagen restaurante</figcaption>      
-
+                    <figure class="tarjeta-imagen">
+            <picture>
+              <source srcset="./src/img/restaurante.jpg?as=webp&width=500" type="image/webp">
+              <img src="./src/img/restaurante.jpg" alt="Gastronomía">
+            </picture>
+            <figcaption>Imagen restaurantes</figcaption>      
           </figure>
         <div class="tarjeta-texto">
         <h2>Gastronomía</h2>
@@ -86,9 +103,12 @@
         </a>    
       </section>
 
-      <figure class="foto-visitar">
-      <img src="./src/img/20.jpg" alt="atardecer" class="img">
-      </figure>   
+        <figure class="foto-visitar">
+          <picture>
+          <source media="(max-width: 600px)" srcset="./src/img/atardecer_palafrugell.jpg?as=webp&width=600">
+          <img src="./src/img/atardecer_palafrugell.jpg" alt="Atardecer en Palafrugell" class="img">
+          </picture>
+        </figure>
 
   </main>
   <script type="module" src="./src/scripts/main.js"></script>

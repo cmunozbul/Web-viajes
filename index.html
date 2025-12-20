@@ -15,7 +15,17 @@
     <div class="imagen-portada">
       <h1 class="titulo-portada">Bienvenido a Palafrugell</h1>
       <figure class="foto-portada">
-        <img src="./src/img/5.jpg" alt="Vista de Palafrugell">
+        <picture>
+          <source
+          media="(max-width: 600px)"
+          srcset="./src/img/palafrugell.jpg?as=webp&width=600&height=800&fit=cover">
+
+          <source
+          media="(min-width: 601px)"
+          srcset="./src/img/palafrugell.jpg?as=webp&width=1200">
+
+          <img src="./src/img/palafrugell.jpg" alt="Vista de Palafrugell">
+        </picture>
       </figure>
     </div>
   </main>
