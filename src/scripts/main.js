@@ -1,4 +1,3 @@
-import '@fortawesome/fontawesome-free/js/all.js';
 document.addEventListener("DOMContentLoaded", function() {
     const currentPath = window.location.pathname.split("/").pop(); 
     let activePage;
