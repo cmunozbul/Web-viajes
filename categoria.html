@@ -28,7 +28,7 @@
           <figure class="tarjeta-imagen">
             <picture>
               <source srcset="./src/img/barcas_palafrugell.jpg?as=webp&width=500" type="image/webp">
-              <img src="./src/img/barcas_palafrugell.jpg" alt="Barcas en Palafrugell">
+              <img src="./src/img/barcas_palafrugell.jpg" alt="Barcas en Palafrugell" fetchpriority="high">
             </picture>
             <figcaption>Imagen de las barcas de Palafrugell</figcaption>      
           </figure>
@@ -41,7 +41,7 @@
           <figure class="tarjeta-imagen">
             <picture>
               <source srcset="./src/img/mirador.jpg?as=webp&width=500" type="image/webp">
-              <img src="./src/img/mirador.jpg" alt="miradores">
+              <img src="./src/img/mirador.jpg" alt="miradores" loading="lazy">
             </picture>
             <figcaption>Mirador</figcaption>      
           </figure>
@@ -53,8 +53,8 @@
         <a href="" class="tarjeta">
           <figure class="tarjeta-imagen">
             <picture>
-              <source srcset="./src/img/iglesia.jpg?as=webp&width=500" type="image/webp">
-              <img src="./src/img/iglesia.jpg" alt="Monumentos iglesia">
+              <source srcset="./src/img/iglesia.jpg?as=webp&width=500" type="image/webp" >
+              <img src="./src/img/iglesia.jpg" alt="Monumentos iglesia" loading="lazy">
             </picture>
             <figcaption>Iglesia</figcaption>      
           </figure>
@@ -67,7 +67,7 @@
           <figure class="tarjeta-imagen">
             <picture>
               <source srcset="./src/img/museo.jpg?as=webp&width=500" type="image/webp">
-              <img src="./src/img/museo.jpg" alt="museos">
+              <img src="./src/img/museo.jpg" alt="museos" loading="lazy">
             </picture>
             <figcaption>Imagen museos</figcaption>      
           </figure>
@@ -80,7 +80,7 @@
           <figure class="tarjeta-imagen">
             <picture>
               <source srcset="./src/img/actividades.jpg?as=webp&width=500" type="image/webp">
-              <img src="./src/img/actividades.jpg" alt="Actividades">
+              <img src="./src/img/actividades.jpg" alt="Actividades" loading="lazy">
             </picture>
             <figcaption>Imagen Actividades</figcaption>      
           </figure>
@@ -93,7 +93,7 @@
                     <figure class="tarjeta-imagen">
             <picture>
               <source srcset="./src/img/restaurante.jpg?as=webp&width=500" type="image/webp">
-              <img src="./src/img/restaurante.jpg" alt="Gastronomía">
+              <img src="./src/img/restaurante.jpg" alt="Gastronomía" loading="lazy">
             </picture>
             <figcaption>Imagen restaurantes</figcaption>      
           </figure>
@@ -106,12 +106,12 @@
         <figure class="foto-visitar">
           <picture>
           <source media="(max-width: 600px)" srcset="./src/img/atardecer_palafrugell.jpg?as=webp&width=600">
-          <img src="./src/img/atardecer_palafrugell.jpg" alt="Atardecer en Palafrugell" class="img">
+          <img src="./src/img/atardecer_palafrugell.jpg" alt="Atardecer en Palafrugell" class="img" loading="lazy">
           </picture>
         </figure>
 
   </main>
-  <script type="module" src="./src/scripts/main.js"></script>
+  <script type="module" src="./src/scripts/main.js" defer></script>
   <include src="./src/components/footer.html"></include>
 </body>
 </html>

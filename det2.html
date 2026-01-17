@@ -19,7 +19,7 @@
           <source media="(max-width: 600px)" 
           srcset="./src/img/barcas_palafrugell.jpg?as=webp&width=600&height=300&fit=cover 1x, 
                     ./src/img/barcas_palafrugell.jpg?as=webp&width=1200&height=600&fit=cover 2x">
-          <img src="./src/img/barcas_palafrugell.jpg?as=webp&width=800&height=500" alt="Barcas en Calella">
+          <img src="./src/img/barcas_palafrugell.jpg?as=webp&width=800&height=500" alt="Barcas en Calella" fetchpriority="high">
           </picture>
           <figcaption>Paisaje de Palafrugell</figcaption>      
         </figure>
@@ -32,7 +32,7 @@
             <figure class="fotos-detalle">
               <picture>
                 <source media="(max-width: 768px)" srcset="./src/img/playas_palafrugell.jpg?as=webp&width=700&height=400">
-                <img src="./src/img/playas_palafrugell.jpg?as=webp&width=800&height=500&fit=cover" alt="Playa Palafrugell">
+                <img src="./src/img/playas_palafrugell.jpg?as=webp&width=800&height=500&fit=cover" alt="Playa Palafrugell" loading="lazy">>
               </picture>
               <figcaption>Playas de Palafrugell</figcaption>      
             </figure>
@@ -44,7 +44,7 @@
             <figure class="fotos-detalle">
               <picture>
                 <source media="(max-width: 768px)" srcset="./src/img/playa_tamariu.jpg?as=webp&width=700&height=400">
-                <img src="./src/img/playa_tamariu.jpg?as=webp&width=800&height=500" alt="Playa Tamariu">
+                <img src="./src/img/playa_tamariu.jpg?as=webp&width=800&height=500" alt="Playa Tamariu" loading="lazy">
               </picture>
               <figcaption>Playa de Tamariu</figcaption>      
             </figure>
@@ -57,7 +57,7 @@
             <figure class="fotos-detalle">
               <picture>
                 <source media="(max-width: 768px)" srcset="./src/img/cala_el_golfet.jpg?as=webp&width=700&height=400">
-                <img src="./src/img/cala_el_golfet.jpg?as=webp&width=800&height=500" alt="Cala el Golfet">
+                <img src="./src/img/cala_el_golfet.jpg?as=webp&width=800&height=500" alt="Cala el Golfet" loading="lazy">
               </picture>
               <figcaption>Cala el Golfet</figcaption>      
             </figure>
@@ -72,7 +72,7 @@
       </div>
     </div>   
   </main>
-  <script type="module" src="./src/scripts/main.js"></script>
+  <script type="module" src="./src/scripts/main.js" defer></script>
   <include src="./src/components/footer.html"></include>
 </body>
 </html>

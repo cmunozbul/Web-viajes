@@ -17,7 +17,7 @@
         <picture>
           <source media="(max-width: 600px)" 
           srcset="./src/img/mirador.jpg?as=webp&width=600&height=300&fit=cover">
-          <img src="./src/img/mirador.jpg?as=webp&width=1400&height=600&fit=cover" alt="Miradores Palafrugell">
+          <img src="./src/img/mirador.jpg?as=webp&width=1400&height=600&fit=cover" alt="Miradores Palafrugell" fetchpriority="high">
         </picture>
         <figcaption>Mirador Palafrugell</figcaption>      
       </figure>
@@ -44,7 +44,7 @@
             <figure class="fotos-detalle">
               <picture>
                 <source media="(max-width: 768px)" srcset="./src/img/cami-ronda.jpg?as=webp&width=700&height=400">
-                <img src="./src/img/cami-ronda.jpg?as=webp&width=700&height=400" alt="Camí de Ronda">
+                <img src="./src/img/cami-ronda.jpg?as=webp&width=700&height=400" alt="Camí de Ronda" loading="lazy">
               </picture>
             <figcaption>Camí de Ronda</figcaption>      
             </figure>            
@@ -57,7 +57,7 @@
             <figure class="fotos-detalle">
               <picture>
                 <source media="(max-width: 768px)" srcset="./src/img/cap_sebastia.jpg?as=webp&width=700&height=400&fit=cover">
-                <img src="./src/img/cap_sebastia.jpg?as=webp&width=700&height=400" alt="Cap de San Sebastià">
+                <img src="./src/img/cap_sebastia.jpg?as=webp&width=700&height=400" alt="Cap de San Sebastià" loading="lazy">
               </picture>
             <figcaption>Cap de Sant Sebastià</figcaption>      
             </figure>  
@@ -66,14 +66,14 @@
         <p class="descripcion-detalles"> El <span lang="ca">Camí de Ronda</span> es uno de los senderos más populares de la Costa Brava. Aquí tienes un vídeo que recorre sus senderos, calas y miradores.</p>
         
         <div class="video-responsive">
-          <iframe src="https://www.youtube.com/embed/W5IWfMB2HVg?si=bkto3jl4Z2z2eZCg" title="YouTube video miradores"
+          <iframe src="https://www.youtube.com/embed/W5IWfMB2HVg?si=bkto3jl4Z2z2eZCg" title="YouTube video miradores" loading="lazy"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
           </iframe>
         </div>
       </div>
     </div>
   </main>
-  <script type="module" src="./src/scripts/main.js"></script>
+  <script type="module" src="./src/scripts/main.js"defer></script>
   <include src="./src/components/footer.html"></include>
 </body>
 </html>
